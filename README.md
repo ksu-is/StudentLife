@@ -23,6 +23,15 @@ The app will utilize a user-friendly interface with drag-and-drop calendar funct
 ## Why This App?
 Students often struggle with time management due to overlapping commitments and a lack of resources that cater specifically to their needs. The StudentLife app will serve as a platform to not only boost academic performance but also improve overall well-being. 
 
+# Scheduling Feature
+def schedule_task(task_name, due_date):
+    """Schedule a new task with a name and due date."""
+    return f"Task '{task_name}' is scheduled for {due_date}."
+
+# Example usage
+if __name__ == "__main__":
+    print(schedule_task("Finish math assignment", "2024-11-20"))
+
 ## Project Roadmap
 A significant portion of the preliminary research and planning for this project has already been completed, with more work currently in progress. The next steps include:
 
