@@ -29,7 +29,7 @@ def display_task(task):
 
 if __name__ == "__main__":
     # User input to create a task
-    print("Welcome to StudentLife Task Scheduler!")
+    print("Welcome to StudentLife!")
     
     task_name = input("Enter the task name: ")
     due_date = input("Enter the due date (YYYY-MM-DD): ")
