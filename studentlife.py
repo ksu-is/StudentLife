@@ -27,12 +27,24 @@ def display_task(task):
     """Display task details."""
     print(task)
 
-# Example usage
 if __name__ == "__main__":
-    # Create and display a task
-    task1 = schedule_task("Finish math assignment", "2024-11-20", "High")
-    display_task(task1)
+    # User input to create a task
+    print("Welcome to StudentLife Task Scheduler!")
+    
+    task_name = input("Enter the task name: ")
+    due_date = input("Enter the due date (YYYY-MM-DD): ")
+    priority = input("Enter the priority (High, Medium, Normal): ")
 
-    # Mark task as completed
-    task1.mark_completed()
-    display_task(task1)
+    # Create and display the task
+    task = schedule_task(task_name, due_date, priority)
+    print("\nTask created:")
+    display_task(task)
+
+    # Option to mark task as completed
+    mark_complete = input("Do you want to mark this task as completed? (yes/no): ").strip().lower()
+    if mark_complete == "yes":
+        task.mark_completed()
+        print("\nTask updated:")
+        display_task(task)
+    else:
+        print("\nTask remains as scheduled.")
